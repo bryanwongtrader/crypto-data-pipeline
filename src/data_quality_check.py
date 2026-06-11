@@ -184,5 +184,5 @@ def run_data_quality_check(file_path: str) -> None:
 
 
 if __name__ == "__main__":
-    sample_file = "data_sample/BTC_USDT_binance_1d_sample.csv"
+    sample_file = "data_sample/BTC_USDT_binance_1h_sample.csv"
     run_data_quality_check(sample_file)
