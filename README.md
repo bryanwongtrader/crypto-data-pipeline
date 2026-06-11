@@ -63,7 +63,7 @@ This pipeline is designed to support future research projects such as:
 
 ## Status
 
-This project is currently in development. The first version focuses on building a clean and reliable Binance OHLCV data pipeline.
+This project is currently completed. The first version focuses on building a clean and reliable Binance OHLCV data pipeline.
 
 ## Author
 
