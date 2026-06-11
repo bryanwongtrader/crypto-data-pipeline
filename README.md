@@ -38,6 +38,49 @@ In quantitative trading, data quality is critical. Before building any trading s
 - ccxt
 - CSV data storage
 - Binance market data
+## How to Run
+## Example Output
+
+The downloaded dataset contains standard OHLCV columns:
+
+```text
+timestamp,open,high,low,close,volume
+2023-01-01 00:00:00+00:00,16541.77,16628.00,16499.01,16616.75,96925.41374
+2023-01-02 00:00:00+00:00,16617.17,16799.23,16548.70,16672.87,121888.57191
+```
+
+Clone the repository:
+## Data Cleaning Steps
+
+The downloader applies basic cleaning steps before saving the dataset:
+
+- Converts millisecond timestamps into UTC datetime format
+- Removes duplicated timestamp records
+- Sorts data chronologically
+- Stores data in CSV format for research and backtesting
+
+```bash
+git clone https://github.com/bryanwongtrader/crypto-data-pipeline.git
+cd crypto-data-pipeline
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the OHLCV downloader:
+
+```bash
+python src/download_ohlcv.py
+```
+
+The script downloads BTC/USDT daily OHLCV data from Binance and saves the output as:
+
+```text
+BTC_USDT_binance_1d.csv
+```
 
 ## Repository Structure
 
