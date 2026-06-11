@@ -88,10 +88,12 @@ BTC_USDT_binance_1d.csv
 crypto-data-pipeline/
 ├── README.md
 ├── requirements.txt
+├── .gitignore
 ├── src/
-│   └── download_binance_ohlcv.py
-└── data/
-    └── .gitkeep
+│   └── download_ohlcv.py
+└── data_sample/
+    └── BTC_USDT_binance_1d_sample.csv
+
 ```
 
 ## Research Use Case
@@ -106,7 +108,9 @@ This pipeline is designed to support future research projects such as:
 
 ## Status
 
-This project is currently completed. The first version focuses on building a clean and reliable Binance OHLCV data pipeline.
+The first version of this project is completed. It focuses on building a clean and reliable Binance OHLCV data pipeline.
+
+Future improvements will include data validation checks, multi-symbol batch downloads, missing data detection, and integration with backtesting research.
 
 ## Author
 
