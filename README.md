@@ -48,6 +48,25 @@ timestamp,open,high,low,close,volume
 2023-01-01 00:00:00+00:00,16541.77,16628.00,16499.01,16616.75,96925.41374
 2023-01-02 00:00:00+00:00,16617.17,16799.23,16548.70,16672.87,121888.57191
 ```
+## Data Quality Check
+
+This project includes a basic data quality check script for validating OHLCV datasets.
+
+The script checks:
+
+- Required OHLCV columns
+- Missing values
+- Duplicated timestamps
+- Chronological order
+- OHLC price consistency
+- Negative volume values
+- Basic return and volatility summary
+
+Run the data quality check:
+
+```bash
+python src/data_quality_check.py
+```
 
 Clone the repository:
 ## Data Cleaning Steps
@@ -90,11 +109,12 @@ crypto-data-pipeline/
 ├── requirements.txt
 ├── .gitignore
 ├── src/
-│   └── download_ohlcv.py
+│   ├── download_ohlcv.py
+│   └── data_quality_check.py
 └── data_sample/
-    └── BTC_USDT_binance_1d_sample.csv
-
+    └── BTC_USDT_binance_1h_sample.csv
 ```
+
 
 ## Research Use Case
 
